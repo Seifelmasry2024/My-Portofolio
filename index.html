@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Seif Elmasry — Full-Stack Developer specializing in Node.js, building modern, scalable web applications with cutting-edge technologies."
+    />
+    <meta
+      name="keywords"
+      content="Seif Elmasry, Full-Stack Developer, Node.js, Web Developer, Portfolio"
+    />
+    <meta name="author" content="Seif Elmasry" />
+    <!-- favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+    <title>Seif Elmasry — Full-Stack Developer</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "glZNdq-nn6x97zWoI",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">Loading...</div>
+      </div>
+    </div>
+
+    <!-- ============ CUSTOM CURSOR ============ -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ============ PARTICLES BACKGROUND ============ -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="#hero" class="navbar-brand">
+          Seif<span class="accent">Dev</span><span class="dot"></span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#hero" class="active" data-nav>Home</a>
+          <a href="#about" data-nav>About</a>
+          <a href="#skills" data-nav>Skills</a>
+          <a href="#projects" data-nav>Projects</a>
+          <a href="#services" data-nav>Services</a>
+          <a href="#experience" data-nav>Experience</a>
+          <!-- <a href="#testimonials" data-nav>Testimonials</a> -->
+          <a href="#contact" data-nav>Contact</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section id="hero">
+      <div class="hero-bg-gradient g1"></div>
+      <div class="hero-bg-gradient g2"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-greeting">
+              <span class="wave">👋</span> Hello, I'm
+            </div>
+            <h1 class="hero-name">
+              Seif <span class="gradient-text">Elmasry</span>
+            </h1>
+            <p class="hero-role">
+              Full-Stack Developer &mdash;
+              <span class="typewriter" id="typewriter"></span>
+            </p>
+            <p class="hero-description">
+              I craft high-performance, scalable web applications with Node.js,
+              React, and modern technologies. Passionate about clean code,
+              beautiful UI, and turning ideas into impactful digital products.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn-primary">
+                <span>View My Work</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn-outline">
+                <i class="bi bi-chat-dots"></i>
+                Let's Talk
+              </a>
+            </div>
+            <div class="hero-social">
+              <a
+                href="https://github.com/Seifelmasry2024"
+                aria-label="GitHub"
+                id="social-github"
+                target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/seif-elmasry-10491b21a/"
+                aria-label="LinkedIn"
+                id="social-linkedin"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" aria-label="Twitter" id="social-twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" aria-label="Instagram" id="social-instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-label">Years Exp.</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="25">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="15">0</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-container">
+              <div class="hero-image-ring"></div>
+              <div class="hero-image-ring-2"></div>
+              <div class="hero-image-glow"></div>
+              <img
+                src="img/2-0-removed.png"
+                alt="Seif Elmasry"
+                class="hero-image"
+              />
+              <!-- line 720 in css-->
+              <div class="hero-badge badge-1">
+                <div class="badge-dot"></div>
+                Available for Work
+              </div>
+              <div class="hero-badge badge-2">
+                <i class="bi bi-code-slash"></i>
+                Node.js Expert
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="bi bi-person"></i> About Me</div>
+          <h2 class="section-title">
+            Discover My <span class="highlight">Story</span>
+          </h2>
+          <p class="section-subtitle">
+            A passionate developer dedicated to building exceptional digital
+            experiences.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div
+            class="about-image-side"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="about-image-card">
+              <img src="img/1738333810457.jpg" alt="Seif Elmasry" />
+              <div class="about-image-overlay"></div>
+            </div>
+            <div class="about-experience-badge">
+              <span class="number">3+</span>
+              <span class="label">Years<br />Experience</span>
+            </div>
+          </div>
+
+          <div class="about-content" data-aos="fade-left" data-aos-delay="300">
+            <h3>
+              I'm Seif Elmasry, a
+              <span class="highlight">Full-Stack Developer</span>
+            </h3>
+            <p>
+              I'm a results-driven full-stack developer specializing in building
+              robust, scalable web applications with Node.js, Express, React,
+              and modern databases. I love solving complex problems and
+              transforming ideas into polished products.
+            </p>
+            <p>
+              With a deep understanding of both front-end aesthetics and
+              back-end architecture, I bridge the gap between design and
+              functionality, delivering seamless user experiences that perform
+              at scale.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="about-info-item">
+                <i class="bi bi-person-badge"></i>
+                <div>
+                  <div class="info-label">Name</div>
+                  <div class="info-value">Seif Elmasry</div>
+                </div>
+              </div>
+              <div class="about-info-item">
+                <i class="bi bi-envelope"></i>
+                <div>
+                  <div class="info-label">Email</div>
+                  <div class="info-value">
+                    <a href="mailto:[seifelmasry2024@gmail.com]"
+                      >seifelmasry2024@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="about-info-item">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <div class="info-label">Location</div>
+                  <div class="info-value">Egypt</div>
+                </div>
+              </div>
+              <div class="about-info-item">
+                <i class="bi bi-translate"></i>
+                <div>
+                  <div class="info-label">Languages</div>
+                  <div class="info-value">Arabic, English</div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="assets/React-Seif Eldeen Helal.pdf"
+              download
+              class="btn-download"
+              id="btn-download-cv"
+              target="_blank"
+            >
+              <i class="bi bi-download"></i>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="bi bi-gear"></i> My Skills</div>
+          <h2 class="section-title">
+            Technologies I <span class="highlight">Master</span>
+          </h2>
+          <p class="section-subtitle">
+            Continuously learning and evolving with modern development tools and
+            frameworks.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Front-End -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <div>
+                <div class="skill-category-title">Front-End Development</div>
+                <div class="skill-category-subtitle">UI & Client-side</div>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="bi bi-filetype-html"></i> HTML5
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-filetype-css"></i> CSS3
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-filetype-js"></i> JavaScript
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-bootstrap"></i> Bootstrap
+              </div>
+              <div class="skill-item">
+                <i id="tailwind" class="fa-brands fa-react"></i> React.js
+              </div>
+              <div class="skill-item">
+                <i id="tailwind" class="fa-brands fa-tailwind-css"></i>
+                Tailwind.CSS
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-phone"></i> Responsive Design
+              </div>
+            </div>
+          </div>
+
+          <!-- Back-End -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="bi bi-server"></i>
+              </div>
+              <div>
+                <div class="skill-category-title">Back-End Development</div>
+                <div class="skill-category-subtitle">Server & APIs</div>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fa-brands fa-node-js"></i> Node.js
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-node"></i> Express.js
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-braces"></i> REST APIs
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-shield-check"></i> JWT Auth
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-python"></i> Python
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-lightning"></i> Socket.io
+              </div>
+            </div>
+          </div>
+
+          <!-- Database & Tools -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <div>
+                <div class="skill-category-title">Database & DevOps</div>
+                <div class="skill-category-subtitle">Storage & Deployment</div>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="bi bi-database"></i> MongoDB
+              </div>
+              <div class="skill-item"><i class="bi bi-table"></i> MySQL</div>
+              <div class="skill-item">
+                <i class="fa-brands fa-git-alt"></i> Git
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-github"></i> GitHub
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-docker"></i> Docker
+              </div>
+              <div class="skill-item">
+                <i class="bi bi-cloud-upload"></i> AWS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="bi bi-folder-check"></i> Portfolio
+          </div>
+          <h2 class="section-title">
+            Featured <span class="highlight">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            A selection of my recent work that showcases my skills and passion
+            for development.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="img/project-ecommerce.jpg" alt="E-Commerce Dashboard" />
+              <div class="project-image-overlay"></div>
+              <div class="project-links">
+                <a
+                  href="#"
+                  class="project-link"
+                  aria-label="View Live"
+                  id="proj1-live"
+                  ><i class="bi bi-box-arrow-up-right"></i
+                ></a>
+                <a
+                  href="#"
+                  class="project-link"
+                  aria-label="View Code"
+                  id="proj1-code"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                A full-stack e-commerce dashboard with real-time analytics,
+                inventory management, and integrated payment processing using
+                Stripe.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img
+                src="img/project-taskmanager.jpg"
+                alt="TaskFlow Project Manager"
+              />
+              <div class="project-image-overlay"></div>
+              <div class="project-links">
+                <a
+                  href="#"
+                  class="project-link"
+                  aria-label="View Live"
+                  id="proj2-live"
+                  ><i class="bi bi-box-arrow-up-right"></i
+                ></a>
+                <a
+                  href="#"
+                  class="project-link"
+                  aria-label="View Code"
+                  id="proj2-code"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Express</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Socket.io</span>
+              </div>
+              <h3 class="project-title">TaskFlow — Project Manager</h3>
+              <p class="project-description">
+                A collaborative Kanban board with real-time drag-and-drop, team
+                chat, and smart task automation for agile teams.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img src="img/project-chatapp.jpg" alt="FlowChat Messaging" />
+              <div class="project-image-overlay"></div>
+              <div class="project-links">
+                <a
+                  href="#"
+                  class="project-link"
+                  aria-label="View Live"
+                  id="proj3-live"
+                  ><i class="bi bi-box-arrow-up-right"></i
+                ></a>
+                <a
+                  href="#"
+                  class="project-link"
+                  aria-label="View Code"
+                  id="proj3-code"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Socket.io</span>
+                <span class="project-tag">JWT</span>
+              </div>
+              <h3 class="project-title">FlowChat — Real-Time Messaging</h3>
+              <p class="project-description">
+                A WhatsApp-style chat app with real-time messaging, typing
+                indicators, emoji reactions, and end-to-end encryption.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="bi bi-layers"></i> Services</div>
+          <h2 class="section-title">
+            What I <span class="highlight">Offer</span>
+          </h2>
+          <p class="section-subtitle">
+            End-to-end development services that bring your vision to life.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-description">
+              Custom web applications built with modern tech stacks, optimized
+              for performance and scalability.
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon"><i class="bi bi-phone"></i></div>
+            <h3 class="service-title">Responsive Design</h3>
+            <p class="service-description">
+              Pixel-perfect interfaces that look stunning and work flawlessly on
+              every device and screen size.
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon"><i class="bi bi-server"></i></div>
+            <h3 class="service-title">Backend & APIs</h3>
+            <p class="service-description">
+              Robust RESTful APIs and server-side solutions with Node.js,
+              Express, and secure authentication.
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon"><i class="bi bi-database-gear"></i></div>
+            <h3 class="service-title">Database Design</h3>
+            <p class="service-description">
+              Efficient database architecture with MongoDB and MySQL, optimized
+              queries and data modeling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="bi bi-briefcase"></i> Experience
+          </div>
+          <h2 class="section-title">
+            My <span class="highlight">Journey</span>
+          </h2>
+          <p class="section-subtitle">
+            Key milestones in my professional career as a developer.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2026 — Present</div>
+              <h4 class="timeline-title">Full-Stack Developer</h4>
+              <div class="timeline-company">Freelance & Contract Work</div>
+              <p class="timeline-description">
+                Building end-to-end web applications for international clients,
+                specializing in Node.js, React, and cloud deployments.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 — 2024</div>
+              <h4 class="timeline-title">Frontend Developer</h4>
+              <div class="timeline-company">Tech Startup</div>
+              <p class="timeline-description">
+                Maintain websites and build websites using html, css, javascript
+                and React.Js. And also develop RESTful APIs and real-time
+                features using Node.js, Express, and MongoDB. Improved API
+                response times by 40%.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022 — 2023</div>
+              <h4 class="timeline-title">Junior Web Developer</h4>
+              <div class="timeline-company">Web Agency</div>
+              <p class="timeline-description">
+                Built responsive websites and landing pages for diverse clients.
+                Learned agile methodologies and collaborative development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS SECTION ============ -->
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="bi bi-envelope"></i> Get in Touch
+          </div>
+          <h2 class="section-title">
+            Let's Work <span class="highlight">Together</span>
+          </h2>
+          <p class="section-subtitle">
+            Have a project in mind? Let's turn your ideas into reality.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-info-card">
+              <div class="icon"><i class="bi bi-envelope"></i></div>
+              <div>
+                <div class="label">Email</div>
+                <div class="info-value">
+                  <a href="mailto:[seifelmasry2024@gmail.com]"
+                    >seifelmasry2024@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon"><i class="bi bi-telephone"></i></div>
+              <div>
+                <div class="label">Phone</div>
+                <div class="value">
+                  <a href="tel:+201067379910">+20 106 737 9910</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <div class="label">Location</div>
+                <div class="value">Cairo, Egypt</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon"><i class="bi bi-clock"></i></div>
+              <div>
+                <div class="label">Availability</div>
+                <div class="value">Open for Freelance & Onsite</div>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            id="contactForm"
+            action="https://formsubmit.co/seifelmasry2024@gmail.com"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                name="userName"
+                <label for="nameInput" id="name">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailInput" id="email" name="userEmail"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subjectInput" id="subject" name="subject"
+                >Subject</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="subjectInput"
+                placeholder="What's this about?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="messageInput" id="message" name="message"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="messageInput"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn-submit"
+              id="submitBtn"
+              onclick="sendMail()"
+            >
+              <span>Send Message</span>
+              <i class="bi bi-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">Seif<span class="accent">Dev</span></div>
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/Seifelmasry2024" aria-label="GitHub"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/seif-elmasry-10491b21a/"
+              aria-label="LinkedIn"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Seif Elmasry. All rights reserved
+            <span class="heart">&hearts;</span>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script src="fontawesome/js/all.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Main JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
